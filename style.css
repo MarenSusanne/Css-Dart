@@ -1,0 +1,77 @@
+:root {
+    --pie-size: 500px;
+    --sector-size: 100%;
+    --border-radius: 50%;
+    --green: rgb(0, 99, 0);
+    --red: rgb(160, 0, 0);
+    --gray: gray;
+  }
+  
+  body {
+    background: var(--gray);
+  }
+  
+  .pie-chart {
+    position: relative;
+    width: var(--pie-size);
+    height: var(--pie-size);
+  }
+  
+  .sector {
+    --p: 18deg;
+    position: absolute;
+    width: var(--sector-size);
+    height: var(--sector-size);
+    border-radius: var(--border-radius);
+    background: #851560;
+    mask: conic-gradient(from var(--s), #0000, #000 1deg var(--p), #0000 calc(var(--p) + 1deg));
+    -webkit-mask: conic-gradient(from var(--s), #0000, #000 1deg var(--p), #0000 calc(var(--p) + 1deg));
+  }
+  
+  #triple {
+    position: absolute;
+    margin-top: -35px;
+  }
+  
+  #single1 {
+    width: 430px;
+    height: 430px;
+    margin: 35px;
+  }
+  
+  #double {
+    width: 300px;
+    height: 300px;
+    margin: -400px 35px 35px 100px;
+  }
+  
+  #single2 {
+    width: 230px;
+    height: 230px;
+    margin: -300px 35px 35px 135px;
+  }
+  
+  #bullS, #bullD {
+    position: relative;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+  }
+  
+  #bullS {
+    width: 60px;
+    height: 60px;
+    margin: -180px 35px 35px 220px;
+  }
+  
+  #bullD {
+    width: 25px;
+    height: 25px;
+    background-color: var(--red);
+    margin: -78px 35px 35px 237.5px;
+  }
+  
+  #container {
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  
