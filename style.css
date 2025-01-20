@@ -5,6 +5,7 @@
     --green: rgb(0, 99, 0);
     --red: rgb(160, 0, 0);
     --gray: gray;
+    --black: black;
   }
   
   body {
@@ -29,14 +30,14 @@
   }
   
   #triple {
-    position: absolute;
-    margin-top: -35px;
+    position: relative;
+    margin: -35px 0px 0px 0px;
   }
   
   #single1 {
     width: 430px;
     height: 430px;
-    margin: 35px;
+    margin: -465px 35px 35px 35px;
   }
   
   #double {
@@ -71,7 +72,10 @@
   }
   
   #container {
-    margin-top: 100px;
+    background: var(--black);
+    margin-top: 90px;
     margin-left: 30px;
+    height: 600px;
+    width: 600px;
   }
   
