@@ -29,9 +29,40 @@
     -webkit-mask: conic-gradient(from var(--s), #0000, #000 1deg var(--p), #0000 calc(var(--p) + 1deg));
   }
   
+  .dart-number {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transform-origin: center calc(var(--pie-size) / 2 + 20px); /* Distance from the center */
+}
+  .dart-numberUPDOWN {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transform-origin: center calc(var(--pie-size) / 2 + 20px); /* Distance from the center */
+}
+  .dart-numberD {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transform-origin: center calc(var(--pie-size) / 2 + 20px); /* Distance from the center */
+}
+  .dart-numberT {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transform-origin: center calc(var(--pie-size) / 2 + 20px); /* Distance from the center */
+}
+  
   #triple {
     position: relative;
-    margin: -81px 0px 0px 0px;
+    margin: -180px 0px 0px 0px;
   }
   
   #single1 {
@@ -71,18 +102,38 @@
     margin: -78px 35px 35px 237.5px;
   }
   
-  #container {
+#container {
+    position: fixed;
+    top: 43.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     background: var(--black);
     border-radius: 50%;
-    margin-top: 90px;
-    margin-left: 30px;
     height: 600px;
     width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
   #charts {
-    margin: -120px 0px 0px 0px;
+    margin: -20px 0px 0px 0px;
   }
+
+  #overlay-content {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    height: 600px;
+    width: 600px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
