@@ -31,7 +31,7 @@
   
   #triple {
     position: relative;
-    margin: -35px 0px 0px 0px;
+    margin: -81px 0px 0px 0px;
   }
   
   #single1 {
@@ -73,9 +73,16 @@
   
   #container {
     background: var(--black);
+    border-radius: 50%;
     margin-top: 90px;
     margin-left: 30px;
     height: 600px;
     width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
+  #charts {
+    margin: -120px 0px 0px 0px;
+  }
