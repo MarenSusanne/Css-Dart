@@ -37,14 +37,6 @@
     text-align: center;
     transform-origin: center calc(var(--pie-size) / 2 + 20px); /* Distance from the center */
 }
-  .dart-numberUPDOWN {
-    position: absolute;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    transform-origin: center calc(var(--pie-size) / 2 + 20px); /* Distance from the center */
-}
   .dart-numberD {
     position: absolute;
     font-size: 1.5rem;
@@ -132,7 +124,6 @@
     text-align: center;
     height: 600px;
     width: 600px;
-    border: solid;
     display: flex;
     justify-content: center;
     align-items: center;
